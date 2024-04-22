@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="models.ventas">
+    <TableView fx:id="tblRegister" layoutX="36.0" layoutY="335.0" prefHeight="324.0" prefWidth="640.0">
+        <columns>
+            <TableColumn fx:id="colNombre" prefWidth="134.0" text="Nombre" />
+            <TableColumn fx:id="colCantidad" prefWidth="119.0" text="Cantidad" />
+            <TableColumn fx:id="colPrecio" prefWidth="119.0" text="Precio" />
+            <TableColumn fx:id="colTotal" prefWidth="171.0" text="Total" />
+        </columns>
+    </TableView>
+    <Button fx:id="btnEliminarTodo" layoutX="244.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnEliminarTodoActionPerformed" style="-fx-background-color: #30ff24;" text="Eliminar Todo" />
+    <Button fx:id="btnEliminar" layoutX="171.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnEliminarActionPerformed" style="-fx-background-color: #30ff24;" text="Eliminar" />
+    <Button fx:id="btnEditar" layoutX="108.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnEditarActionPerformed" style="-fx-background-color: #30ff24;" text="Editar" />
+    <Button fx:id="btnAgregar" layoutX="36.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnAgregarActionPerformed" style="-fx-background-color: #30ff24;" text="Agregar" />
+    <TextField fx:id="txtNombres" layoutX="108.0" layoutY="92.0" promptText="Nombre" />
+    <TextField fx:id="txtTipo" layoutX="108.0" layoutY="184.0" promptText="Precio" />
+    <TextField fx:id="txtEtapa" layoutX="108.0" layoutY="137.0" promptText="Cantidad" />
+    <Label fx:id="lblTotal" layoutX="643.0" layoutY="668.0" text="Total: " />
+   <ImageView fitHeight="304.0" fitWidth="208.0" layoutX="698.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../img/Bambu.png" />
+      </image>
+   </ImageView>
+   <Text layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventas">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Text layoutX="38.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Producto:" />
+   <Text layoutX="40.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad:" />
+   <Text layoutX="57.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" />
+   <Button layoutX="578.0" layoutY="26.0" onAction="#btnInicioActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Inicio" />
+   <Button layoutX="725.0" layoutY="26.0" onAction="#btnClientesActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Clientes" />
+   <Button layoutX="640.0" layoutY="26.0" onAction="#btnInventarioActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Inventario" />
+   <Button layoutX="801.0" layoutY="26.0" onAction="#btnProveedoresActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Proveedores" />
+</AnchorPane>

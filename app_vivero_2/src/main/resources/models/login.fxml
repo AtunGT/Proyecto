@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="models.Login">
+    <children>
+        <GridPane alignment="center" hgap="10" vgap="10">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+            <HBox alignment="center" spacing="10" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+         <PasswordField fx:id="txtContraseña" layoutX="255.0" layoutY="204.0" prefHeight="26.0" prefWidth="202.0" promptText="Contraseña" />
+         <TextField fx:id="txtUsuario" layoutX="255.0" layoutY="134.0" prefHeight="26.0" prefWidth="202.0" promptText="Usuario" />
+         <Label layoutX="295.0" layoutY="54.0" text="Inicio de sesión">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+         <Label layoutX="203.0" layoutY="138.0" text="Usuario:" />
+         <Label layoutX="182.0" layoutY="208.0" text="Contraseña:" />
+          <Button layoutX="255.0" layoutY="288.0" onAction="#btnIngresarActionPerformed" style="-fx-background-color: #30ff24;" text="Ingresar" />
+          <Button layoutX="394.0" layoutY="288.0" onAction="#btnRegistrarActionPerformed" style="-fx-background-color: #30ff24;" text="Registrar" />
+         <CheckBox fx:id="chkMostrarContraseña" layoutX="394.0" layoutY="240.0" onAction="#chkMostrarContraseñaActionPerformed" text="Mostrar contraseña" />
+    </children>
+</AnchorPane>

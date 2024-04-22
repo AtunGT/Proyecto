@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="models.Clientes">
+    <Label layoutX="34.0" layoutY="30.0" text="Clientes">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+    <TableView fx:id="tblRegister" layoutX="25.0" layoutY="279.0" onMouseClicked="#tblRegisterClicked" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="colNombre" text="Nombre" />
+            <TableColumn fx:id="colTelefono" text="Teléfono" />
+        </columns>
+    </TableView>
+    <TextField fx:id="txtNombres" layoutX="157.0" layoutY="109.0" promptText="Nombre" />
+    <TextField fx:id="txtTelefono" layoutX="157.0" layoutY="150.0" promptText="Teléfono" />
+    <Button layoutX="25.0" layoutY="226.0" onAction="#btnAgregarClicked" style="-fx-background-color: #30ff24;" text="Agregar" />
+    <Button layoutX="98.0" layoutY="226.0" onAction="#btnEditarClicked" style="-fx-background-color: #30ff24;" text="Editar" />
+    <Button layoutX="158.0" layoutY="226.0" onAction="#btnEliminarClicked" style="-fx-background-color: #30ff24;" text="Eliminar" />
+   <Button layoutX="232.0" layoutY="226.0" onAction="#btnEliminarTodoActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Eliminar todo" />
+   <Text layoutX="44.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del cliente:" />
+   <Text layoutX="44.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono del cliente:" />
+   <Button layoutX="727.0" layoutY="32.0" onAction="#btnProveedoresActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Proveedores" />
+   <Button layoutX="635.0" layoutY="32.0" onAction="#btnInventarioActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Inventario" />
+   <Button layoutX="833.0" layoutY="32.0" onAction="#btnVentasActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Ventas" />
+   <Button layoutX="567.0" layoutY="32.0" onAction="#btnInicioActionPerformed" mnemonicParsing="false" style="-fx-background-color: #30ff24;" text="Inicio" />
+   <ImageView fitHeight="266.0" fitWidth="183.0" layoutX="707.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../img/Bambu.png" />
+      </image>
+   </ImageView>
+</AnchorPane>
